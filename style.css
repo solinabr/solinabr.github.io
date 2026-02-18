@@ -13,8 +13,10 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    system-ui, sans-serif;
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -27,6 +29,27 @@ body {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+
+p, .subtitle, .date {
+  font-weight: 400;
+}
+
 
 /* Header */
 
@@ -65,9 +88,9 @@ body {
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 700;
-  letter-spacing: -2px;
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 0.95;
 }
 
 .subtitle {
