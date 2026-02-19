@@ -54,10 +54,13 @@ p, .subtitle, .date {
 /* Header */
 
 .header {
-  padding: 1.2rem 0;
-  background: var(--bg);
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: transparent;
+  z-index: 10;
 }
 
 .nav {
@@ -83,8 +86,17 @@ p, .subtitle, .date {
 /* Hero */
 
 .hero {
-  padding: 6rem 0 4rem;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 0;
+  background: var(--bg);
+}
+
+.hero-content {
+  padding-top: 6rem;
 }
 
 .hero h1 {
