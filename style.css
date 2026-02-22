@@ -133,6 +133,26 @@ p, .subtitle, .date {
   transform: scale(0.97);
 }
 
+.hero-sponsors {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-sponsors img {
+  height: 28px;
+  width: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.hero-sponsors img:hover {
+  opacity: 1;
+}
+
 /* About */
 
 .about {
