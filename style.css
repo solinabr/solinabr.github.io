@@ -87,12 +87,13 @@ p, .subtitle, .date {
 /* Hero */
 
 .hero {
+  position: relative;
   min-height: 100svh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding: 0;
+  align-items: center;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -134,12 +135,13 @@ p, .subtitle, .date {
 }
 
 .hero-sponsors {
-  margin-top: 3rem;
+  position: absolute;
+  bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .hero-sponsors img {
@@ -151,6 +153,17 @@ p, .subtitle, .date {
 
 .hero-sponsors img:hover {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .hero-sponsors {
+    bottom: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .hero-sponsors img {
+    height: 22px;
+  }
 }
 
 /* About */
