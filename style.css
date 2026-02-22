@@ -135,13 +135,12 @@ p, .subtitle, .date {
 }
 
 .hero-sponsors {
-  position: absolute;
-  bottom: 2rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .hero-sponsors img {
@@ -153,17 +152,6 @@ p, .subtitle, .date {
 
 .hero-sponsors img:hover {
   opacity: 1;
-}
-
-@media (max-width: 600px) {
-  .hero-sponsors {
-    bottom: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .hero-sponsors img {
-    height: 22px;
-  }
 }
 
 /* About */
